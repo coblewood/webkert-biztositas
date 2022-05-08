@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "webkert-eletbiztositas": {
+      "hosting": {
+        "biztsoitas-beadando": [
+          "webkert-eletbiztositas"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "webkert-eletbiztositas"
+  }
+}

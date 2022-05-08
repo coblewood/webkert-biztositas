@@ -1,0 +1,16 @@
+.profile-body{
+    min-height: 850px;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-title-wrapper{
+    padding: 5px;
+    width: fit-content;
+    margin: auto;
+}
+
+.button-wrapper{
+    width: fit-content;
+    margin:auto;
+}

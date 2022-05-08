@@ -1,0 +1,45 @@
+body{
+    width: 100%;
+    margin-bottom:50px;
+    
+}
+
+.home_title{
+    margin: auto;
+    margin-top: 15px;
+    width: fit-content
+}
+
+.options_wrapper{
+    margin: auto;
+    margin-top: 15px;
+    width: fit-content;
+
+}
+
+.biztositasok {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .biztositasok  td, .biztositasok  th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .biztositasok  tr:hover {background-color: #ddd;}
+  
+  .biztositasok  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+form{
+    margin: auto;
+    margin-top: 15px;
+    width: fit-content
+}

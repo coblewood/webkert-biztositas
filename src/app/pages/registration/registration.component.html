@@ -1,0 +1,29 @@
+<div class="registration_body">
+    <div class="registration_title_wrapper">
+        <h1>Életbiztosítás regisztráció</h1>
+    </div>
+    <div class="registration_form_wrapper">
+        <form [formGroup]="userForm" (ngSubmit)="addUser()">
+            <mat-form-field>
+                <mat-label for="name">Név:</mat-label>
+                <input matInput type="text" formControlName="name"/>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label for="email">E-mail:</mat-label>
+                <input matInput type="email" formControlName="email"/>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label for="password">Jelszó:</mat-label>
+                <input matInput type="password" formControlName="password"/>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label for="rePassword">Jelszó újra:</mat-label>
+                <input matInput type="password" name="rePassword"/>
+            </mat-form-field>
+            <div>
+                <button mat-raised-button type="submit">Registration</button>
+                <button mat-raised-button (click)="goBack()">Back</button>
+            </div>
+        </form>
+    </div>
+</div>

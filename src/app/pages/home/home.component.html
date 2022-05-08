@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="home.component.css">
+<body>
+    <div class="home_title">
+        <h1>Válasszon csomagot</h1>
+    </div>
+    <div class="options_wrapper">
+        <table class="biztositasok">
+            <th>Csomagok</th>
+            <tr>
+                <td>Megnevezés</td>
+                <td>Ár</td>
+            </tr>
+            <tr>
+                <td>Alap csomag</td>
+                <td>10 Cr/hó</td>
+            </tr>
+            <tr>
+                <td>Bronz csmoag</td>
+                <td>20 Cr/hó</td>
+            </tr>
+            <tr>
+                <td>Ezüst csmoag</td>
+                <td>30 Cr/hó</td>
+            </tr>
+            <tr>
+                <td>Arany csmoag</td>
+                <td>40 Cr/hó</td>
+            </tr>
+            <tr>
+                <td>Platinum csmoag</td>
+                <td>50 Cr/hó</td>
+            </tr>
+        </table>
+    </div>
+    <form [formGroup]="csomagForm" (ngSubmit)="addCsomag()"  *ngIf="loggedInUser">
+        <div class="csomag_slect_wrapper">
+            <select name="csomag_select" id="csomag_select">
+                <option value="alap" formControlName="name">Alap</option>
+                <option value="bronz" formControlName="name">Bronz</option>
+                <option value="ezust" formControlName="name">Ezüst</option>
+                <option value="arany" formControlName="name">Arany</option>
+                <option value="platinum" formControlName="name">Platinum</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Kiválaszt</button>
+        </div>
+    </form>
+    <div class="not-logged-in"  *ngIf="!(loggedInUser)">
+        <h3>Csomag kiválasztásához jelentkezzen be.</h3>
+    </div>
+
+</body>
